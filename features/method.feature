@@ -12,7 +12,7 @@ Feature: Execute API method
     Then I see the expected response
 
 
-  Scenario: Invalid API key
+  Scenario: Invalid API call
 
-    When I make a call with an invalid API key
-    Then I see a message informing me that my API key is invalid
+    When I make an invalid API call
+    Then I see a message informing me why my API call was invalid

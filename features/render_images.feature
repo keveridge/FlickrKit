@@ -5,22 +5,28 @@ Feature: Render images
     Given I run the "render_images" function
 
 
-  Scenario: As a grid
+  Scenario: Grid render
 
     When I specify the type as "grid"
     Then I see a grid of images
 
 
-  Scenario: Hortizonal line
+  Scenario: Hortizonal render
 
     When I specify the type as "horizontal"
     Then I see a horizontal line of images
 
 
-  Scenario: Vertical line
+  Scenario: Vertical render
 
     When I specify the type as "vertical"
     Then I see a vertical line of images
+
+
+  Scenario: Default render
+
+    When I do not specify the type
+    Then I see a grid of images
 
 
   Scenario: Limit
